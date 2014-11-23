@@ -17,6 +17,7 @@ def reset():
   GPIO.output(pin, GPIO.HIGH)
   time.sleep(0.12)
   GPIO.output(pin, GPIO.LOW)
+  GPIO.cleanup()
 
 def process():
   while True:
